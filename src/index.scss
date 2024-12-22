@@ -1,0 +1,11 @@
+@use './assets/scss/button.scss';
+@use './assets/scss/card.scss';
+@use './assets/scss/form.scss';
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,143 @@
+@use '../../assets/scss/root.scss';
+
+.profile {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 100vh;
+
+	.left {
+		width: 300px;
+	}
+
+	.right {
+		width: 90vw;
+		padding: 24px;
+	}
+
+	.profile-view {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		padding: 16px 0;
+
+		.profile-header {
+			display: flex;
+
+			.user-image {
+				padding: 12px 56px;
+			}
+
+			.user-info {
+				display: flex;
+				flex-direction: column;
+				gap: 24px;
+				font-size: 0.8rem;
+
+				.top-buttons {
+					display: flex;
+					gap: 12px;
+					align-items: center;
+					justify-items: center;
+
+					.user-name {
+						font-weight: 500;
+						font-size: 1rem;
+					}
+
+					button {
+						background: #eeeeee;
+						color: black;
+						padding: 8px 16px;
+						font-weight: 500;
+						cursor: auto;
+						i.bi-chevron-down {
+							display: inline-block;
+							margin-left: 8px;
+						}
+					}
+
+					button.blue {
+						background: root.$primary;
+						color: #ffffff;
+					}
+
+					i.bi-three-dots {
+						font-size: 1.5rem;
+					}
+				}
+
+				.top-numbers {
+					display: flex;
+
+					gap: 36px;
+
+					.item {
+						display: flex;
+						align-items: center;
+						justify-items: center;
+						gap: 4px;
+
+						b {
+							font-size: 1rem;
+						}
+					}
+				}
+
+				.user-data {
+					display: flex;
+					flex-direction: column;
+					gap: 4px;
+				}
+
+				.follower-by {
+					div {
+						display: flex;
+						gap: 4px;
+
+						b {
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+
+		.list-repos {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			margin-top: 24px;
+
+			.item {
+				width: 24vw;
+				height: 24vw;
+				background: #999;
+
+				img {
+					width: 100%;
+					height: 100%;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.profile-modal {
+		.modal-body .profile-modal-header {
+			position: relative;
+			i {
+				padding: 8px;
+				font-size: 1.2rem;
+				cursor: pointer;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				padding: 16px;
+				z-index: 100;
+			}
+		}
+	}
+}

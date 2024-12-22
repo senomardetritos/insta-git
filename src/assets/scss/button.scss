@@ -1,0 +1,14 @@
+@use './root.scss';
+
+button {
+	background-color: root.$primary;
+	border-radius: root.$border-radius;
+	color: white;
+	border: none;
+	padding: 8px;
+	cursor: pointer;
+}
+
+button:disabled {
+	background-color: root.$primary-disabled;
+}

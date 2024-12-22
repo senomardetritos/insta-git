@@ -1,0 +1,27 @@
+@use './root.scss';
+
+.form-control {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 8px;
+
+	label {
+		font-size: 0.8rem;
+	}
+
+	input {
+		border: root.$border-gray;
+		border-radius: root.$border-radius;
+		padding: 4px 8px;
+	}
+
+	.error {
+		border: none;
+		border-radius: root.$border-radius;
+		background-color: root.$danger-disabled;
+		color: root.$danger;
+		padding: 8px 12px;
+		font-size: 0.8rem;
+	}
+}

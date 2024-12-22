@@ -1,0 +1,52 @@
+.list-round-friend {
+	> div {
+		display: flex;
+		width: 100%;
+		gap: 12px;
+		position: relative;
+	}
+	.friend {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 4px;
+		width: 100%;
+		cursor: pointer;
+
+		.login {
+			width: 64px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			font-size: 0.7rem;
+		}
+	}
+
+	.btn-arrow-left {
+		position: absolute;
+		left: -32px;
+		top: 24px;
+		width: 30px;
+		height: 30px;
+		background-color: transparent;
+		cursor: pointer;
+		i {
+			color: #333333;
+			font-size: 1.2rem;
+		}
+	}
+
+	.btn-arrow-right {
+		position: absolute;
+		right: -40px;
+		top: 24px;
+		width: 30px;
+		height: 30px;
+		background-color: transparent;
+		cursor: pointer;
+		i {
+			color: #333333;
+			font-size: 1.2rem;
+		}
+	}
+}

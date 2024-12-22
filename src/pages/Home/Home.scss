@@ -1,0 +1,90 @@
+@use '../../assets/scss/root.scss';
+
+.home {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 100vh;
+
+	.left {
+		width: 300px;
+	}
+
+	.center {
+		width: 650px;
+		padding: 24px;
+
+		.home-feed {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 24px 0;
+		}
+	}
+
+	.right {
+		width: 450px;
+		padding: 24px;
+	}
+
+	.options,
+	.repos {
+		.options-header,
+		.repos-header {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			position: relative;
+
+			h1 {
+				width: 100%;
+				margin: 0px;
+				padding: 8px;
+				font-size: 1rem;
+				font-weight: 500;
+				text-align: center;
+			}
+
+			i {
+				padding: 8px;
+				font-size: 1.2rem;
+				cursor: pointer;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+		}
+
+		.repos-header {
+			i {
+				padding: 16px;
+				z-index: 100;
+			}
+		}
+
+		.options-body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			.options-item {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-top: 1px solid root.$muted-disabled;
+				font-size: 0.8rem;
+				padding: 12px 0;
+				width: 100%;
+				cursor: pointer;
+			}
+		}
+
+		.repos-body {
+			width: auto;
+			height: auto;
+		}
+	}
+}
