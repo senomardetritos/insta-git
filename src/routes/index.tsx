@@ -1,11 +1,11 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 
 import Login from '../pages/Login/Login';
 import Home from '../pages/Home/Home';
 import Search from '../pages/Search/Search';
 import Profile from '../pages/Profile/Profile';
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
 	{
 		path: '/',
 		element: <Login />,
