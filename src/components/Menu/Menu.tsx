@@ -1,12 +1,22 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Menu.scss'
 
 function Menu() {
+
+    const navigate = useNavigate()
+
+    function logout() {
+        navigate('/')
+    }
+
     return (
         <div className="menu">
             <ul>
                 <li>
-                    <div className="logo">InstaGit</div>
+                    <div className="logo">
+                        <img src='/vite.svg' width={20} height={20} />
+                        <p>InstaGit</p>
+                    </div>
                 </li>
                 <li>
                     <Link to="/home" className="menu-item">
@@ -21,7 +31,7 @@ function Menu() {
                     </Link>
                 </li>
                 <li>
-                    <div className="menu-item">
+                    <div className="menu-item" onClick={() => logout()}>
                         <i className="bi bi-box-arrow-left" />
                         Sair
                     </div>
