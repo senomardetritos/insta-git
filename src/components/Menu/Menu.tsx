@@ -14,7 +14,7 @@ function Menu() {
             <ul>
                 <li>
                     <div className="logo">
-                        <img src='/vite.svg' width={20} height={20} />
+                        <img src='./vite.svg' width={20} height={20} />
                         <p>InstaGit</p>
                     </div>
                 </li>

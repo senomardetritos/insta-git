@@ -27,7 +27,7 @@ function Login() {
         <div className="login-container">
             <div className="card">
                 <div className="card-title">
-                    <img src='/vite.svg' width={50} height={50} />
+                    <img src='./vite.svg' width={50} height={50} />
                     <p>InstaGit</p>
                 </div>
                 <div className="form-control">
